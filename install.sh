@@ -606,7 +606,7 @@ if [[ $netstack == "6" ]]; then
     pause
 
     # 安装 WARP IPv4
-    bash <(curl -fsSL git.io/warp.sh) 4
+    wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh 4
 
     # 重启 V2Ray
     echo
@@ -633,7 +633,7 @@ elif  [[ $netstack == "4" ]]; then
     pause
 
     # 安装 WARP IPv6    
-    bash <(curl -fsSL git.io/warp.sh) 6
+    wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh 6
 
     # 重启 V2Ray
     echo
